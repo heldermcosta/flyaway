@@ -5079,7 +5079,7 @@ getPressureAltitudeLimits(oat) {
 
             // 2D interpolation for graph1 (OAT and Pressure Altitude to yTransfer)
             interpolateGraph1(pressureAltitude, oat) {
-                const graph1Data = window.graphData.graph1;
+                const graph1Data = graphData.graph1;
                 
                 // Find exact OAT match first
                 for (const oatData of graph1Data) {
@@ -5147,7 +5147,7 @@ getPressureAltitudeLimits(oat) {
 
             // Interpolation for graph2 (Gross Weight adjustment)
             interpolateGraph2(yTransfer, grossWeight) {
-                const graph2Data = window.graphData.graph2;
+                const graph2Data = graphData.graph2;
                 
                 // Find exact gross weight match first
                 for (const weightData of graph2Data) {
@@ -5215,7 +5215,7 @@ getPressureAltitudeLimits(oat) {
 
             // Interpolation for graph3 (Headwind benefit)
             interpolateGraph3(xTransfer, headwind) {
-                const graph3Data = window.graphData.graph3;
+                const graph3Data = graphData.graph3;
                 
                 // Find exact headwind match first
                 for (const hwData of graph3Data) {
@@ -5452,4 +5452,5 @@ getPressureAltitudeLimits(oat) {
     </script>
 </body>
 </html>
+
 
