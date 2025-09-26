@@ -4993,7 +4993,8 @@ getPressureAltitudeLimits(oat) {
                 
                 let minAlt = 14000;  // Start with maximum
                 let maxAlt = -1000;  // Start with minimum
-                
+                                 // Use the correct variable here:
+    const graph1Data = graphData.graph1;
                 // Check what pressure altitude ranges have data for this OAT
                 for (const oatData of graph1Data) {
                     // Find closest OAT in data
@@ -5452,5 +5453,6 @@ getPressureAltitudeLimits(oat) {
     </script>
 </body>
 </html>
+
 
 
